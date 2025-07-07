@@ -13,6 +13,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/password", require("./routes/passwordRoutes"));
+app.use("/api/auth", require("./routes/authRoutes"));
 
 app.get("/", (req, res) => {
   res.send("API is running...");
